@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>29 sept classwork</title>
+</head>
+<body>
+    <script>
+        var num = 10;
+        c= num++;
+        alert(c);
+        c= --num;
+        alert(c);
+        c = ++num;
+        alert(c); 
+         var c = --num + num-- + ++num - --num;
+        alert("Number: " +num+ " c = "+c);
+       
+      var c = --num;
+      alert(c);
+      c = num--;
+      alert(c);
+      c = ++num;
+      alert(c);
+      c = --num;
+      alert(c); 
+  
+//PERCENTAGES
+var per = prompt("Enter your percentage?");
+if (per >= 80 && per <= 100){
+    alert("Grade A");
+}
+else if (per >= 60 && per <= 80){
+    alert("Grade B");}
+else if (per > 45 && per <= 59){
+        alert("Grade C");
+    }
+
+else {
+    alert("Fail");
+}
+  
+  // Calculator
+
+  var a = +prompt("Please enter your first value:");
+  var b = +prompt("Please enter your second value");
+  var sum = a +b;
+  var mul = a *b;
+  var sub = a -b;
+  var div = a /b;
+  var mod = a %b;
+  var opr = prompt("Please Enter the operation you want to perform, Sum for Addition, Sub for Subtraction ,Mul for multiplication, div for division, Mod for Modulus");
+  if ( opr == "sum" || opr == "Sum" || opr == "SUM"){
+      alert(sum);
+  } 
+ else if ( opr == "sub" || opr == "Sub" || opr == "SUB"){
+      alert(sub);
+  } 
+  else if ( opr == "mul" || opr == "Mul" || opr == "MUL"){
+      alert(mul);
+  } 
+  else if ( opr == "div" || opr == "Div" || opr == "DIV"){
+      alert(div);
+  } 
+  else if ( opr == "mod" || opr == "Mod" || opr == "MOD"){
+      alert(mod);
+  } 
+  </script>
+</body>
+</html>
