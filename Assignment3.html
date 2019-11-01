@@ -32,13 +32,8 @@
     
     document.write("Score of "+std[2]+" is "+scr[2]+". Percentage is: "+((scr[2]/total)*100)+"<br>");
 
+ 
     
-
-    //q4
-    var cities=["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
-    var scities = cities.splice(2,2);
-    document.write(scities);
-    */
           //q3
     var col = ["red","blue","pink"];
     console.log(col); //array
@@ -54,13 +49,54 @@
     console.log(col);
     col.pop(); //removing from end
     console.log(col);
-    var inind = 
+    var incolor = prompt("Please enter the color you want to add:");
+    var indexat = prompt("Please enter the index at which you want to place the color:");
+    col.splice(indexat, 0, incolor);
+    console.log(col);
+     var index2 = prompt("Please enter the index from which you want to delete the color:");
+     var mColors = prompt("Please enter the number of colors you want to delete");
+     mColor = mColors - 1;
+     col.splice(index2,mColors);
+     console.log(col);
+
+        
+
+    //q4
+    var cities=["Karachi","Lahore","Islamabad","Quetta","Peshawar"];
+    var scities = cities.splice(2,2);
+    document.write(scities);
 
 
-    //q5
+   
 
     //q6
+    var aCities = ["Karachi","Lahore","Islamabad","Faislabad"];
+    var o = ["th","st","nd","rd"];
+    document.write("1"+o[1]+" choice is "+aCities[0]);
+    document.write("2"+o[2]+" choice is "+aCities[1]);
+    document.write("3"+o[3]+" choice is "+aCities[3]);
 
+ //q5 remove all duplicate items from array
+
+ function removeDuplicates(num) {
+  var x,
+      len=num.length,
+      out=[],
+      obj={};
+ 
+  for (x=0; x<len; x++) {
+    obj[num[x]]=0;
+  }
+  for (x in obj) {
+    out.push(x);
+  }
+  return out;
+}
+var Mynum = [1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6];
+result = removeDuplicates(Mynum);
+alert("Array before: "+Mynum);
+alert("Array After: "+result);
+*/
     //q7
 
     //q8
